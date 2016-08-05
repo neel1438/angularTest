@@ -1,4 +1,4 @@
-(function() {
+define(['angular'],function(angular) {
     angular.module("app").directive('phoneNumber', ['$browser' , function($browser) {
         function formatValue(number) {
             if (!number) {
@@ -61,4 +61,4 @@
             }
         };
     }]);
-})();
+});

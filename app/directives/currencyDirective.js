@@ -1,4 +1,4 @@
-(function() {
+define(['angular'],function(angular) {
     angular.module("app").directive('currency', ['$browser',
         function($browser) {
             function formatValue(number) {
@@ -48,4 +48,4 @@
             };
         }
     ]);
-})();
+});

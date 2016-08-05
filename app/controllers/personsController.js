@@ -1,4 +1,4 @@
-(function(){
+define(['angular','app/services/personDataService'],function(angular){
     angular.module("app")
     .controller('personsController',['$scope' , 'personDataService',function($scope,personDataService){
        personDataService.getPersons().then(function(result){
@@ -12,4 +12,4 @@
             $scope.propertyName = propName;
        };
     }]);
-})();
+});

@@ -1,4 +1,4 @@
-(function(){
+define(['angular'],function(angular){
     angular.module('app').factory('dataShareService',function(){
         return{
             getData: getData,
@@ -12,4 +12,4 @@
             return data;
         }
     })
-})();
+});

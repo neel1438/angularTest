@@ -1,6 +1,5 @@
-(function(){
+define(['angular','app/directives/currencyDirective','app/directives/phoneNumberDirective'], function(angular){
     angular.module("app")
     .controller('homeController',['$scope',function($scope){
-        // $scope.phone=7899306490;
     }]);
-})();
+});

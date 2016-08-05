@@ -1,4 +1,4 @@
-(function(){
+define(['angular','app/services/dataShareService'],function(angular){
     angular.module("app")
     .controller('inputController',['$scope','dataShareService','$state',function($scope,dataShareService,$state){
         $scope.shareData=function(){
@@ -6,4 +6,4 @@
             $state.go('dataOutput');
         }
     }]);
-})();
+});

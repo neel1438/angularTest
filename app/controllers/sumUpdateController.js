@@ -1,4 +1,4 @@
-(function(){
+define(['angular'],function(angular){
     'use strict';
     angular.module('app').controller('sumUpdateController',['$scope',function($scope){
         $scope.num1=0;
@@ -20,4 +20,4 @@
             }
         };
     }]);
-})();
+});

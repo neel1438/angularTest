@@ -1,14 +1,13 @@
-'use strict';
-
 require.config({
     paths: {
-        'angular': 'lib/angular/angular.min',
-        'ngAnimate' : 'lib/angular-animate/angular-animate.min',
-        'ngMaterial' : 'lib/angular-material/angular-material.min',
-        'ngMessages' : 'lib/angular-message/angular-message.min',
-        'ngAria' : 'lib/angular-aira/angular-aira.min',
-        'ui-router' : 'lib/angular-ui-router/release/angular-ui-router.min',
-        'appModule': 'app/app'
+        'angular': '/lib/angular/angular.min',
+        'ngAnimate' : '/lib/angular-animate/angular-animate.min',
+        'ngMaterial' : '/lib/angular-material/angular-material.min',
+        'ngMessages' : 'lib/angular-messages/angular-messages.min',
+        'ngAria' : '/lib/angular-aria/angular-aria.min',
+        'ui-router' : '/lib/angular-ui-router/release/angular-ui-router.min',
+        'appModule' : '/app/app',
+        'coreModule': '/app/coreModule'
     },
     shim: {
         'angular': {
@@ -27,11 +26,16 @@ require.config({
             deps:['angular']
        },
        'ngMaterial' : {
-            deps:['angular','ngMessages','ngAria','ngAnimate'],
+            deps:['ngMessages','ngAria','ngAnimate']
        },
+       'appModule':{
+        deps:['ui-router','ngMaterial']
+       },
+       'coreModule' :{
+        deps: ['appModule']
+       }
     }
 });
+require(['coreModule'],function(){
 
-require(['app'],function(app){
-    angular.bootstrap(document,app);
 });
