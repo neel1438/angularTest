@@ -1,0 +1,9 @@
+(function(){
+    angular.module("app")
+    .controller('inputController',['$scope','dataShareService','$state',function($scope,dataShareService,$state){
+        $scope.shareData=function(){
+            dataShareService.setData($scope.input);
+            $state.go('dataOutput');
+        }
+    }]);
+})();

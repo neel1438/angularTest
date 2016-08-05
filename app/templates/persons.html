@@ -1,0 +1,22 @@
+<md-input-container>
+    <label>Filter</label>
+    <input type="text" ng-model="searchKeyword" >
+</md-input-container>
+  <table>
+    <tr>
+      <th>
+        <button ng-click="sortBy('name')">Name</button>
+      </th>
+      <th>
+        <button ng-click="sortBy('gender')">Gender</button>
+      </th>
+      <th>
+        <button ng-click="sortBy('age')">Age</button>
+      </th>
+    </tr>
+    <tr ng-repeat="person in persons | orderBy:propertyName:reverse | filter: searchKeyword">
+      <td>{{person.name}}</td>
+      <td>{{person.gender}}</td>
+      <td>{{person.age}}</td>
+    </tr>
+  </table>

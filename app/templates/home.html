@@ -1,0 +1,31 @@
+<div>
+    <md-button ui-sref="dataInput" class="md-primary md-hue-1">Data Sharing Solution(#2 in pdf) </md-button>
+</div>
+<div>
+    <md-button ui-sref="persons" class="md-primary md-hue-1">Sorting a table(#4 in pdf) </md-button>
+</div>
+<div>
+    <md-button ui-sref="sumUpdate" class="md-primary md-hue-1">sumUpdate Solution(#7 in pdf) </md-button>
+</div>
+
+<div class="inline-block">
+    <md-input-container>
+        <label>Phone Number</label>
+        <input type="text" phone-number ng-model="phone" maxlength="14">
+    </md-input-container>
+</div>
+
+<div class="inline-block">
+    {{phone}}
+</div>
+<br>
+<div class="inline-block">
+    <md-input-container>
+        <label>Currency</label>
+        <input type="text" currency ng-model="currency">
+    </md-input-container>
+</div>
+
+<div class="inline-block">
+    {{currency}}
+</div>

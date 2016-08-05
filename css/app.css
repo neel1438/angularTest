@@ -1,0 +1,24 @@
+.container{
+    margin:10px;
+}
+.persons ,tr ,th,td{
+    border :1px solid;
+    padding:5px 10px;
+}
+.ng-enter{
+    transition: 1s;
+    opacity: 0;
+}
+.ng-enter-active{
+    opacity: 1;
+}
+.ng-leave{
+    transition: 1s;
+    opacity: 1;
+}
+.ng-leave-active{
+    opacity: 0;
+}
+.inline-block{
+    display: inline-block;
+}

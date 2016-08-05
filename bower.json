@@ -1,0 +1,23 @@
+{
+  "name": "wallethubApp",
+  "description": "Angular Assignment",
+  "main": "js/main.js",
+  "authors": [
+    "Neel Bommisetty"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.8",
+    "requirejs": "^2.2.0",
+    "angular-ui-router": "^0.3.1",
+    "angular-material": "^1.0.9"
+  }
+}
